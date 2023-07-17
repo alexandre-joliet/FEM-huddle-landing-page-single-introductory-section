@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1440px;
+}
+
+.header {
+    padding: 50px;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    gap: 25px;
+}
+
+.footer__svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(265deg) brightness(104%) contrast(101%);
+    height: 40px;
+    padding: 7px;
+    border: 1.75px solid black;
+    border-radius: 50px;
+}
