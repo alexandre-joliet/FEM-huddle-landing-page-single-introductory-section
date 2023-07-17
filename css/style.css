@@ -10,10 +10,10 @@ body {
     background-color: hsl(257, 40%, 49%);
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: auto;
     max-width: 1440px;
-    height: 800px;
 }
 
 .header {
@@ -53,7 +53,7 @@ main {
     color: hsl(257, 40%, 49%);;
     border: none;
     border-radius: 50px;
-    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.2);;
+    box-shadow: 7px 5px 5px rgba(0, 0, 0, 0.15);;
     font-family: 'Open-sans', sans-serif;
     font-size: 1.15rem;
     padding: 0.8rem 4rem;
@@ -86,4 +86,47 @@ main {
 .footer__svg:hover {
     cursor: pointer;
     filter: invert(81%) sepia(19%) saturate(6272%) hue-rotate(233deg) brightness(95%) contrast(92%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background: url(../images/bg-mobile.svg) no-repeat;
+        background-color: hsl(257, 40%, 49%);
+    }
+    
+    .header {
+        padding: 40px;
+    }
+
+    .header img {
+        height: 35px;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px; 
+    }
+
+    .main__text {
+        margin: 30px 0 0 0;
+        padding: 30px 0 0 0;
+        text-align: center;
+    } 
+
+    .main__text--title {
+        font-size: 1.5rem;
+    }
+
+    .main__button {
+        font-size: 0.9rem;
+        padding: 0.75rem 5rem;
+    }
+
+    .footer {
+        justify-content: center;
+        padding: 60px 40px 40px 40px;
+    }
 }
